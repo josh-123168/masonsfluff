@@ -39,3 +39,11 @@ a {
 .fluffy {
     color: rgb(170, 0, 255)
 }
+
+#main-title {
+    text-align: center;
+}
+
+.back {
+    background-color: gray;
+}
