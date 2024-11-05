@@ -41,7 +41,7 @@ a {
 }
 
 .fluffy {
-    color: rgb(170, 0, 255)
+    color: rgb(85, 5, 125)
 }
 
 #main-title {
@@ -55,7 +55,8 @@ a {
 .quote {
     display: flex;
     flex-direction: column;
-    background-color: rgba(98, 35, 1, 0.666);
+    background-color: rgba(133, 50, 206, 0.666);
     align-items: center;
     margin: 10px 0px;
+    color:rgb(85, 5, 125);
 }
