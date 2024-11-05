@@ -47,3 +47,11 @@ a {
 .back {
     background-color: gray;
 }
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(98, 35, 1, 0.666);
+    align-items: center;
+    margin: 10px 0px;
+}
