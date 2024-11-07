@@ -21,11 +21,20 @@ a {
     border-width: 3px;
     border-radius: 8px;
     padding: 15px;
+    box-shadow: 1px 1px 5px;
+}
+
+a:hover {
+    font-size: 18px;
+}
+
+a:active {
+    font-size: 16px;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 20px;
     padding: 10px;
 }
@@ -34,28 +43,48 @@ a {
     background-color: rgba(205, 110, 54, 0.71);
 }
 
+#hair:active {
+    background-color: rgba(165, 88, 43, 0.71);
+}
+
 #basketball {
     background-color:rgba(239, 74, 33, 0.834);
+}
+
+#basketball:active {
+    background-color:rgba(195, 60, 26, 0.834);
 }
 
 #fragrance {
     background-color:rgba(172, 85, 231, 0.834);
 }
 
+#fragrance:active {
+    background-color:rgba(131, 64, 176, 0.834);
+}
+
 #masonclicker {
     background-color:rgba(0, 220, 44, 0.765);
+}
+
+#masonclicker:active {
+    background-color:rgba(1, 165, 34, 0.765);
 }
 
 .fluffy {
     color: rgb(85, 5, 125)
 }
 
-#main-title {
-    text-align: center;
+.fluffy h1 {
+    background-color: rgba(133, 50, 206, 0.666);
 }
 
 .back {
     background-color: gray;
+}
+
+.back:active {
+    background-color: rgb(71, 71, 71);
 }
 
 .quote {
@@ -70,4 +99,25 @@ a {
 video {
     display: block;
     margin: 0 auto;
+}
+
+.heading {
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    box-shadow: 5px 5px 5px;
+}
+
+.heading h1 {
+    text-shadow: 0px 0px 10px white;
+}
+
+.main {
+    background-color: gray;
+}
+
+.masonclicker {
+    background-color:rgba(0, 220, 44, 0.765)
 }
