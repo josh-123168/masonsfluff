@@ -1,7 +1,6 @@
 .poem{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    font-weight: bold;
     color: rgb(131, 94, 64);
     border: 2px, solid, burlywood,;
     text-align: center;
@@ -120,4 +119,8 @@ video {
 
 .masonclicker {
     background-color:rgba(0, 220, 44, 0.765)
+}
+
+.fluffy-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
