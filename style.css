@@ -124,3 +124,11 @@ video {
 .fluffy-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.basketball {
+    background-color:rgba(239, 74, 33, 0.834)
+}
+
+.emoji {
+    text-shadow: 0px 0px 6px;
+}
