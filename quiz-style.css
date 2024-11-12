@@ -1,0 +1,58 @@
+#back-button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+#back-button:hover {
+    font-size: 18px;
+    box-shadow: 1px 1px 5px;
+}
+
+#back-button:active {
+    background-color: rgb(79, 79, 79);
+}
+
+body {
+    background-color: rgb(252, 252, 133);
+}
+
+.quiz-questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#evil-laugh {
+    font-style: italic;
+}
+
+#aura-button {
+    font-size: 50px;
+    background-color:rgb(255, 0, 0);
+}
+
+#aura-button:hover {
+    font-size: 55px;
+    box-shadow: 1px 1px 5px;
+}
+
+#aura-button:active {
+    font-size: 50px;
+}
+
+.unlimited-aura {
+
+}
+
+#ice-cream {
+    height: 300px;
+}

@@ -31,6 +31,31 @@ a:active {
     font-size: 16px;
 }
 
+#mason-button {
+    border: none;
+    background-color: white;
+}
+
+#mason-button-image:hover {
+    width: 310px;
+}
+
+#mason-button-image:active {
+    width: 300px;
+}
+
+#mason-button-image {
+    width: 300px;
+}
+
+#mason-count {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: aquamarine;
+    border-style: solid;
+    border-color: black;
+}
+
 .buttons {
     display: flex;
     justify-content: space-around;
@@ -68,6 +93,14 @@ a:active {
 
 #masonclicker:active {
     background-color:rgba(1, 165, 34, 0.765);
+}
+
+#masonquiz {
+    background-color: rgba(251, 226, 36, 0.765);
+}
+
+#masonquiz:active {
+    background-color: rgba(172, 155, 25, 0.765);
 }
 
 .fluffy {
@@ -135,4 +168,22 @@ video {
 
 .fragrance {
     background-color:rgba(100, 114, 246, 0.834);
+}
+
+.fail {
+    background-color: #ffff5e;
+}
+
+#fail-message {
+    font-size: 30px;
+}
+
+#you-failed {
+    color: rgb(120, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+#body-fail {
+    background-color: rgb(255, 42, 42);
 }
