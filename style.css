@@ -38,14 +38,17 @@ a:active {
 
 #mason-button-image:hover {
     width: 310px;
+    opacity: .5;
 }
 
 #mason-button-image:active {
     width: 300px;
+    opacity: 1;
 }
 
 #mason-button-image {
     width: 300px;
+    opacity: 1;
 }
 
 #mason-count {
