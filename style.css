@@ -8,7 +8,7 @@
 }
 
 .poem h3 {
-    font-size: 28px
+    font-size: 28px;
 }
 
 a {
@@ -31,6 +31,13 @@ a:active {
     font-size: 16px;
 }
 
+#mason-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: auto;
+}
+
 #mason-button {
     border: none;
     background-color: white;
@@ -38,12 +45,12 @@ a:active {
 
 #mason-button-image:hover {
     width: 310px;
-    opacity: .5;
+    box-shadow: 4px 4px 8px;
 }
 
 #mason-button-image:active {
     width: 300px;
-    opacity: 1;
+    opacity: .8;
 }
 
 #mason-button-image {
