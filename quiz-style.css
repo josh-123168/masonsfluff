@@ -38,19 +38,24 @@ body {
 #aura-button {
     font-size: 50px;
     background-color:rgb(255, 0, 0);
+    box-shadow:rgb(255, 0, 0) 0px 0px 10px;
 }
 
 #aura-button:hover {
     font-size: 55px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 15px;
 }
 
 #aura-button:active {
     font-size: 50px;
+    background-color: rgb(133, 0, 0);
 }
 
 .unlimited-aura {
-
+    background-color:rgb(203, 253, 54);
+    box-shadow:rgb(203, 253, 54) 0px 0px 12px;
+    padding: 8px;
+    margin-bottom: 10px;
 }
 
 #ice-cream {
