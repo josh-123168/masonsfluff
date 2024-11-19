@@ -39,6 +39,10 @@ body {
     font-size: 50px;
     background-color:rgb(255, 0, 0);
     box-shadow:rgb(255, 0, 0) 0px 0px 10px;
+    color: black;
+    text-decoration: none;
+    border: solid 2px;
+    padding: 4px;
 }
 
 #aura-button:hover {
@@ -55,7 +59,7 @@ body {
     background-color:rgb(203, 253, 54);
     box-shadow:rgb(203, 253, 54) 0px 0px 12px;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #ice-cream {

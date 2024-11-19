@@ -207,7 +207,7 @@ video {
     font-size: 30px;
 }
 
-#you-failed {
+.you-failed {
     color: rgb(120, 0, 0);
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
