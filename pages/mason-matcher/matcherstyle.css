@@ -1,0 +1,9 @@
+#heading {
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    box-shadow: 5px 5px 5px;
+    background-color: rgb(251, 51, 225);
+}
