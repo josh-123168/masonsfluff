@@ -81,11 +81,18 @@ a:active {
     text-align: center;
 }
 
-.buttons {
+.info-buttons {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding: 10px;
+}
+
+.button-heading {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.7)
 }
 
 #hair {
@@ -126,6 +133,15 @@ a:active {
 
 #masonquiz:active {
     background-color: rgba(172, 155, 25, 0.765);
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#masonmatcher {
+    background-color: rgb(251, 51, 225)
 }
 
 .fluffy {
@@ -173,6 +189,7 @@ video {
 
 .main {
     background-color: gray;
+    margin-bottom: 30px;
 }
 
 .masonclicker {
