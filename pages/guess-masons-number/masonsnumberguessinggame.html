@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mason's Number Guessing Game</title>
+</head>
+<body>
+
+<h1>WELCOME TO MASON'S NUMBER GUESSING GAME</h1>
+<p>Mason's thinking of a number between 1 and 10 -- Can you guess the number that Mason's thinking of?</p>
+
+<label for="guess">Guess here: </label>
+<input type="number" id="guess" min="1" max="10">
+<button onclick="playGame()">Guess</button>
+
+<p id="result"></p>
+
+<img src="../../assets/mason-guesser-image.JPG" alt="mason" width="600">
+
+<script>
+    function playGame() {
+        let computerChoice = Math.floor(Math.random() * 10) + 1;
+        let playerGuess = parseInt(document.getElementById('guess').value);
+
+        if (isNaN(playerGuess) || playerGuess < 1 || playerGuess > 10) {
+            document.getElementById('result').textContent = "That's not a number between 1 and 10 bruh💀😭💀😭...GET OUTTT!❌💀😭❌🤦😂🙄";
+            return;
+        }
+
+        if (playerGuess === computerChoice) {
+            document.getElementById('result').textContent = `Good shi boy👏👏👏 The number that Mason was thinking of was ${computerChoice}.`;
+        } else {
+            document.getElementById('result').textContent = `YOUR WRONGGG🤣🤣🤣🤣. The number that Mason was thinking of was ${computerChoice}❌💀😭❌🤦😂`;
+        }
+    }
+</script>
+
+</body>
+</html>
+

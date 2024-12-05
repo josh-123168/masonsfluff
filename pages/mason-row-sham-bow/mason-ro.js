@@ -1,7 +1,9 @@
 let move = 0
 let testEl = document.getElementById("test")
 let masonEl = document.getElementById("mason")
+let win = 0
 let masonMove = 0
+
 function rock() {
     move = 1
     testEl.innerText = "Rock"
@@ -33,6 +35,7 @@ function play() {
     }
     if (masonMove == 1 & move == 2) {
         testEl.innerText = "you win this time >:[]"
+        win=win+1
     }
     if (masonMove == 1 & move == 3) {
         testEl.innerText = "I win, hahahaha"
@@ -42,12 +45,14 @@ function play() {
     }
     if (masonMove == 2 & move == 3) {
         testEl.innerText = "you win this time >:[]"
+        win=win+1
     }
     if (masonMove == 3 & move == 1) {
         testEl.innerText = "you win this time >:[]"
+        win=win+1
     }
     if (masonMove == 3 & move == 2) {
         testEl.innerText = "I win, hahahaha"
     }
-
+wins.innerText=win
 }

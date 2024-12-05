@@ -1,0 +1,28 @@
+#back-button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+#back-button:hover {
+    font-size: 18px;
+    box-shadow: 1px 1px 5px;
+}
+
+#back-button:active {
+    background-color: rgb(79, 79, 79);
+}
+
+p {
+    font-size: 21px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(104, 198, 214);
+}
