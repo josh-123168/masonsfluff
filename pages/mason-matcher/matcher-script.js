@@ -1,9 +1,14 @@
+// set 'cards' to all element under the memory-card class
 const cards = document.querySelectorAll(".memory-card");
 
+// define variables, hasFlippedCard will be false at first
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+// flipcard() takes 'this' (the card clicked), opens its class list, and adds the class "flip"
+// if hasFlippedCard is false, then set it to true and set the clicked card to the variable firstCard
+// if lockBoard is true then return
 function flipCard() {
     this.classList.add("flip");
 
@@ -55,4 +60,5 @@ function resetBoard() {
     });
 })();
 
+// takes each element under cards and applies an event listener that will trigger flipCard() when clicked
 cards.forEach(card => card.addEventListener("click", flipCard));

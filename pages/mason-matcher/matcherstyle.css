@@ -1,9 +1,12 @@
+/*  border-box sets the padding and margin to be included in the widths and heights of all elements */
  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/*  margin auto centers the memory game container
+    perspective: 1000px sets how far away the object is on the z plane from the viewer */
 .memory-game {
     width: 640px;
     height: 640px;
@@ -13,6 +16,13 @@
     perspective: 1000px;
 }
 
+/*  width and height are calculated with calc()
+    width is 25% minus 10 pixels from the margin
+    height is 33.333% minus 10 pixels from margin
+    position: relative allows the children (images) of .memory-card to be positioned relative to the container
+    set the scale to 1 with transform
+    transform-style: preserve-3d will position the cards into the 3d space created under .memory-game
+    transition applies the transformation over the span of .5 seconds */
 .memory-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -24,15 +34,19 @@
     transition: transform .5s;
 }
 
+/* set the scale to .97 on click over the span of .2 seconds */
 .memory-card:active {
     transform: scale(.97);
     transition: transform .2s;
 }
 
+/* when a card has the flip class from the .js file it will be rotated 180 degrees on the y-axis */
 .memory-card.flip {
     transform: rotateY(180deg);
 }
 
+/*  position: absolute stacks the images on top of each other
+    hiding the backface visibility makes it so that upon flipping the cards, a reverse image will not be shown */
 .front-face,
 .back-face {
     width: 100%;
@@ -44,10 +58,12 @@
     backface-visibility: hidden;
 }
 
+/* sets the front face image to be on the flipped side of the cards */
 .front-face {
     transform: rotateY(180deg)
 }
 
+/*  body as a flex container centers it vertically and horizontally */
 body {
     height: 100vh;
     display: flex;
