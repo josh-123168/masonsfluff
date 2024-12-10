@@ -1,9 +1,26 @@
+.turns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.turns h2, h1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 /*  border-box sets the padding and margin to be included in the widths and heights of all elements */
- * {
+.memory-game, .memory-game * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
 
 /*  margin auto centers the memory game container
     perspective: 1000px sets how far away the object is on the z plane from the viewer */
@@ -40,7 +57,7 @@
     transition: transform .2s;
 }
 
-/* when a card has the flip class from the .js file it will be rotated 180 degrees on the y-axis */
+/*  when a card has the flip class from the .js file it will be rotated 180 degrees on the y-axis */
 .memory-card.flip {
     transform: rotateY(180deg);
 }
@@ -58,7 +75,7 @@
     backface-visibility: hidden;
 }
 
-/* sets the front face image to be on the flipped side of the cards */
+/*  sets the front face image to be on the flipped side of the cards */
 .front-face {
     transform: rotateY(180deg)
 }
@@ -66,8 +83,8 @@
 /*  body as a flex container centers it vertically and horizontally */
 body {
     height: 100vh;
-    display: flex;
     background-color:rgb(199, 181, 254);
+    /* display: flex; */
 }
 
 #heading {
@@ -93,6 +110,7 @@ body {
     border-width: 3px;
     border-radius: 8px;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 #back-button:hover {
@@ -103,10 +121,4 @@ body {
 #back-button:active {
     font-size: 16px;
     background-color: rgb(71, 71, 71);
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }

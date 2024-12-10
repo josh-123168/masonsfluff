@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="matcherstyle.css">
 </head>
 <body>
-<!--     
+    
     <h1 id="heading">Mason Matcher</h1>
-    <a href="../../index.html" id="back-button">Back</a> -->
+    <a href="../../index.html" id="back-button">Back</a>
+
+    <div class="turns">
+        <h1>Turns:</h1>
+        <h2 id="turnCounterElement">0</h2>
+    </div>
 
     <section class="memory-game">
 
-        <!--Each div is one card containing 2 images... one for a front face and one for a back face-->
+        <!--Each div is one card containing 2 images: one image for a front face and one for a back face-->
+        <!--Every card has its own data attribute corresponding to what image the card contains, this is used for the matching logic-->
         <div class="memory-card" data-framework="chef">
             <img class="front-face" src="../../assets/matcher-assets/chef-mason.png" alt="chef mason">
             <img class="back-face" src="../../assets/matcher-assets/card-back.jpeg" alt="mason matcher card">
@@ -96,6 +102,9 @@
         </div>
 
     </section>
+
+    <p id="win-message"></p>
+    
     <script src="matcher-script.js"></script>
 </body>
 </html>
