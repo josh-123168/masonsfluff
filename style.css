@@ -14,6 +14,10 @@
     background-color:rgba(175, 255, 164, 0.765);
 }
 
+#numguessbody {
+    background-color: rgba(255, 0, 0, 0.724);
+}
+
 .poem {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
@@ -103,43 +107,64 @@ a:active {
 }
 
 #hair {
-    background-color: rgba(133, 50, 206, 0.666);
+    background-color: #ef233c;
 }
 
 #hair:active {
-    background-color: rgba(88, 32, 136, 0.666);
+    background-color: rgb(168, 29, 45);
 }
 
 #basketball {
-    background-color:rgba(239, 74, 33, 0.834);
+    background-color: #ef233c;
 }
 
 #basketball:active {
-    background-color:rgba(195, 60, 26, 0.834);
+    background-color: rgb(168, 29, 45);
 }
 
 #fragrance {
-    background-color:rgba(100, 114, 246, 0.834);
+    background-color:#ef233c;
 }
 
 #fragrance:active {
-    background-color: rgba(75, 87, 187, 0.834);
+    background-color: rgb(168, 29, 45);
 }
 
 #masonclicker {
-    background-color:rgba(0, 220, 44, 0.765);
+    background-color:#ffffff;
 }
 
 #masonclicker:active {
-    background-color:rgba(1, 165, 34, 0.765);
+    background-color:rgb(194, 194, 194)
 }
 
 #masonquiz {
-    background-color: rgba(251, 226, 36, 0.765);
+    background-color: #ffffff;
 }
 
 #masonquiz:active {
-    background-color: rgba(172, 155, 25, 0.765);
+    background-color: rgb(194, 194, 194)
+}
+
+#masonrow {
+    background-color: #2b2d42;
+    color: #ffffff;
+}
+
+
+#masonrow:active {
+    background-color: rgb(33, 38, 91);
+    color: #ffffff;
+}
+
+#masonnumber {
+    background-color: #2b2d42;
+    color: #ffffff;
+}
+
+#masonnumber:active {
+    background-color: rgb(33, 38, 91);
+    color: #ffffff;
 }
 
 .game-buttons {
@@ -147,12 +172,22 @@ a:active {
     justify-content: space-evenly;
 }
 
+.game-buttons2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
 #masonmatcher {
-    background-color: rgb(251, 51, 225)
+    background-color: #ffffff;
+}
+
+#masonmatcher:active {
+    background-color: rgb(194, 194, 194)
 }
 
 .fluffy {
-    color: rgb(85, 5, 125)
+    color: rgb(85, 5, 125);
 }
 
 h1.fluffy {
@@ -195,7 +230,7 @@ video {
 }
 
 .main {
-    background-color: gray;
+    background-color: #8d99ae;
     margin-bottom: 30px;
 }
 
@@ -239,4 +274,8 @@ video {
 
 #body-fail {
     background-color: rgb(255, 42, 42);
+}
+
+#main-body {
+    background-color: #edf2f4;
 }

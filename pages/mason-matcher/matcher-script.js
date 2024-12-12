@@ -8,6 +8,10 @@ let firstCard, secondCard;
 
 let turnCounter = 0;
 let turnCounterElement = document.getElementById("turnCounterElement");
+let finalCount
+
+let matches = 0;
+let winMessage = document.getElementById("win-message")
 
 // flipcard() takes 'this' (the card clicked), opens its class list, and adds the class "flip"
 // if hasFlippedCard on the clicked card is false, then set it to true and set the clicked card to the variable firstCard
@@ -43,6 +47,14 @@ function checkForMatch() {
 function disableCards() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
+
+    //win message and win detection
+    matches += 1;
+
+    if (matches === 8) {
+        finalCount = turnCounter + 1
+        winMessage.innerText = "Wow! You matched all the Masons in " + finalCount + " turns!"
+    }
 
     resetBoard();
     addTurn()
@@ -82,6 +94,10 @@ function resetBoard() {
 function addTurn() {
     turnCounter += 1;
     turnCounterElement.innerText = turnCounter;
+}
+
+function newGame() {
+    location.reload();
 }
 
 // takes each element under cards and applies an event listener that will trigger flipCard() when clicked

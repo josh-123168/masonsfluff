@@ -24,5 +24,44 @@
 p {
     font-size: 21px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(104, 198, 214);
+    color: rgb(21, 76, 170);
+}
+
+body {
+    background-color: rgba(225, 255, 141, 0.934);
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.options button {
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-color: rgb(154, 222, 237);
+}
+
+.play-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.play-btn button {
+    width: 250px;
+    padding: 15px;
+    background-color: rgb(79, 254, 70);
+    border: solid;
+    border-radius: 18px;
+}
+
+.play-btn button:hover {
+    font-size: 16px;
+    box-shadow: 2px 2px 8px;
+}
+
+.play-btn button:active {
+    background-color:rgb(63, 200, 56);
 }
