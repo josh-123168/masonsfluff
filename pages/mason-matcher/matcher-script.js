@@ -52,12 +52,33 @@ function disableCards() {
     matches += 1;
 
     if (matches === 8) {
-        finalCount = turnCounter + 1
-        winMessage.innerText = "Wow! You matched all the Masons in " + finalCount + " turns!"
+        winRating()
     }
 
     resetBoard();
     addTurn()
+}
+
+//  winRating gives a different win message depending on the user's amount of turns
+//  this is called before a turn is added, so all the values are offset by -1
+function winRating() {
+    finalCount = turnCounter + 1
+
+    if (turnCounter === 7) {
+        winMessage.innerText = "Holy aura! You matched all the Masons in " + finalCount + " turns! That's a perfect game! You have so much aura and fluff, but I still have more."
+    }
+    if (turnCounter > 7 && turnCounter <= 11) {
+        winMessage.innerText = "Wow! You matched all the Masons in " + finalCount + " turns! Good boy."
+    }
+    if (turnCounter > 11 && turnCounter <= 15) {
+        winMessage.innerText = "You matched all the Masons in " + finalCount + " turns. +5 Aura."
+    }
+    if (turnCounter > 15 && turnCounter <= 19) {
+        winMessage.innerText = "You matched all the Masons in " + finalCount + " turns. You have terrible memory and negative aura 😂. -100000 aura."
+    }
+    if (turnCounter > 19) {
+        winMessage.innerText = "Wow, you have the worst memory of all time! " + finalCount + " is one of the worst scores I've ever seen! You have negative rizz, negative aura, and negative fluff. Get off my website 😡😡😡😡😡"
+    }
 }
 
 // unflipCards() sets the lockBoard variable to true
