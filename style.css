@@ -21,14 +21,15 @@
 .poem {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    color: rgb(131, 94, 64);
-    border: 2px, solid, burlywood,;
+    color: #2b2d42;
+    border: 2px, solid, #2b2d427f,;
     text-align: center;
     margin: 30px;
 }
 
 .poem h3 {
     font-size: 28px;
+    color: #2b2d42be;
 }
 
 a {
@@ -44,7 +45,7 @@ a {
 
 a:hover {
     font-size: 18px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 1px 1px 5px black;
 }
 
 a:active {
@@ -149,22 +150,26 @@ a:active {
 #masonrow {
     background-color: #2b2d42;
     color: #ffffff;
+    border-color: black;
 }
 
 
 #masonrow:active {
-    background-color: rgb(33, 38, 91);
+    background-color: #2b2d42d2;
     color: #ffffff;
+    border-color: black;
 }
 
 #masonnumber {
     background-color: #2b2d42;
     color: #ffffff;
+    border-color: black;
 }
 
 #masonnumber:active {
-    background-color: rgb(33, 38, 91);
+    background-color: #2b2d42d2;
     color: #ffffff;
+    border-color: black;
 }
 
 .game-buttons {
