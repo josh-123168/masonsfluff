@@ -16,12 +16,6 @@
     box-sizing: border-box;
 }
 
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
-
 /*  margin auto centers the memory game container
     perspective: 1000px sets how far away the object is on the z plane from the viewer */
 .memory-game {
