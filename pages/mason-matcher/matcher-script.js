@@ -48,7 +48,7 @@ function disableCards() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
 
-    //win message and win detection
+    // win message and win detection
     matches += 1;
 
     if (matches === 8) {
@@ -59,8 +59,8 @@ function disableCards() {
     addTurn()
 }
 
-//  winRating gives a different win message depending on the user's amount of turns
-//  this is called before a turn is added, so all the values are offset by -1
+// winRating gives a different win message depending on the user's amount of turns
+// this is called before a turn is added, so all the values are offset by -1
 function winRating() {
     finalCount = turnCounter + 1
 
@@ -96,7 +96,7 @@ function unflipCards() {
     addTurn()
 }
 
-// resetBoard() will set the variables hasFlippedCard and lockBoard to false
+// resetBoard() will set the variables hasFlippedCard and lockBoard to their original false states
 // it will also set firstCard and secondCard back to their original null states
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
@@ -112,11 +112,13 @@ function resetBoard() {
     });
 })();
 
+// adds a turn to turnCounter and updates the text on the page
 function addTurn() {
     turnCounter += 1;
     turnCounterElement.innerText = turnCounter;
 }
 
+// refreshes the page when clicking the new game button
 function newGame() {
     location.reload();
 }
